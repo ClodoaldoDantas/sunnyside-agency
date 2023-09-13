@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #fffcf8;
+  --text-heading: #24303e;
+  --text-body: #808397;
+  --white: #ffffff;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--text-body);
+
+  font-family: var(--font-body);
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+  font-weight: 900;
+  line-height: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
