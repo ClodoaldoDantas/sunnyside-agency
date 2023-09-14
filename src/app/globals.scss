@@ -10,6 +10,7 @@
   --text-heading: #24303e;
   --text-body: #808397;
   --white: #ffffff;
+  --yellow: #fbd600;
 }
 
 body {
@@ -47,4 +48,8 @@ svg {
 
 button {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }

@@ -1,3 +1,4 @@
+import { Header } from '@/components/Header'
 import './globals.scss'
 import type { Metadata } from 'next'
 import { Barlow, Fraunces } from 'next/font/google'
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${barlow.variable} ${fraunces.variable}`}>
+        <Header />
         {children}
       </body>
     </html>
