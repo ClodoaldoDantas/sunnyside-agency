@@ -21,11 +21,18 @@ export function Navbar() {
     <nav className={styles.navbar}>
       <Image src="/images/logo.svg" alt="sunnyside" height={24} width={124} />
 
-      <button type="button" onClick={handleToggleMenu} aria-label="Abrir Menu">
+      <button
+        type="button"
+        onClick={handleToggleMenu}
+        aria-label={isOpen ? 'Fechar Menu' : 'Abrir Menu'}
+        aria-controls="mobile-menu"
+        aria-expanded={isOpen}
+      >
         <Image src="/images/icon-hamburger.svg" alt="" height={18} width={24} />
       </button>
 
       <ul
+        id="mobile-menu"
         className={classNames(styles.navbarMenu, { [styles.active]: isOpen })}
       >
         <li>
