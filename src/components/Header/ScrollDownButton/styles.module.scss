@@ -1,4 +1,9 @@
 .trigger {
   border: 0;
   background: transparent;
+  transition: transform 200ms;
+
+  &:hover {
+    transform: translateY(10px);
+  }
 }
