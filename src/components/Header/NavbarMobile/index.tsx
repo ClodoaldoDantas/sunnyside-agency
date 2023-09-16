@@ -2,11 +2,14 @@
 
 import Image from 'next/image'
 import classNames from 'classnames'
+
 import { useState } from 'react'
 import { useKeyPress } from '@/hooks/useKeyPress'
+import { useOutsideClick } from '@/hooks/useOutsideClick'
+
 import styles from './styles.module.scss'
 
-export function Navbar() {
+export function NavbarMobile() {
   const [isOpen, setIsOpen] = useState(false)
 
   function handleToggleMenu() {
@@ -17,8 +20,14 @@ export function Navbar() {
     setIsOpen(false)
   })
 
+  const ref = useOutsideClick(() => {
+    if (isOpen) {
+      setIsOpen(false)
+    }
+  })
+
   return (
-    <nav className={styles.navbar}>
+    <nav ref={ref} className={styles.navbar}>
       <Image src="/images/logo.svg" alt="sunnyside" height={24} width={124} />
 
       <button
