@@ -1,0 +1,60 @@
+.testimonials {
+  padding: 6.4rem 0;
+}
+
+.title {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 4rem;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 4rem;
+}
+
+.testimony {
+  text-align: center;
+
+  img {
+    margin: auto;
+    border-radius: 50%;
+  }
+
+  & > p {
+    margin: 2rem 0;
+    color: #5b636d;
+    font-size: 1.125rem;
+    letter-spacing: -0.129px;
+  }
+
+  .author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    strong {
+      color: var(--text-heading);
+      font-family: var(--font-heading);
+      font-size: 1.125rem;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: -0.129px;
+    }
+
+    span {
+      color: var(--text-light);
+      font-size: 0.875rem;
+      letter-spacing: -0.1px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 6.4rem 0;
+  background-color: var(--background-footer);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem;
+}
+
+.menu,
+.socialLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  margin-top: 2.5rem;
+  gap: 3.5rem;
+
+  a {
+    font-size: 1.125rem;
+    color: var(--text-footer);
+    letter-spacing: -0.129px;
+    transition: color 200ms;
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+}
+
+.socialLinks {
+  gap: 1.75rem;
+
+  a {
+    transition: filter 200ms;
+
+    &:hover {
+      filter: brightness(0) invert(1);
+    }
+  }
+}

@@ -1,3 +1,5 @@
+import { Testimonials } from '@/components/Testimonials'
+import { Gallery } from '@/components/Gallery'
 import styles from './page.module.scss'
 
 export default function Home() {
@@ -65,6 +67,10 @@ export default function Home() {
           </p>
         </article>
       </section>
+
+      <Testimonials />
+
+      <Gallery />
     </main>
   )
 }
