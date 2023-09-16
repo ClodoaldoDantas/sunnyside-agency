@@ -3,7 +3,8 @@
 
 Caso queira ver o link do desafio acesse [aqui](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef) 
 
-![result](https://github.com/ClodoaldoDantas/sunnyside-agency/assets/32376905/d74d3b92-a9b8-440d-9190-a0dd5eeb4b6e)
+![image](https://github.com/ClodoaldoDantas/sunnyside-agency/assets/32376905/da43e016-2430-4624-903c-f062d1dc3239)
+
 
 ## 💻 Como executar o projeto
 
