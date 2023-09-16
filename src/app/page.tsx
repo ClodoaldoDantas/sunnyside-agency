@@ -8,6 +8,10 @@ export default function Home() {
       <section id="transform-your-brand">
         <div className={styles.grid}>
           <picture className={styles.picture}>
+            <source
+              media="(min-width: 768px)"
+              srcSet="/images/desktop/image-transform.jpg"
+            />
             <img src="/images/mobile/image-transform.jpg" alt="" />
           </picture>
 
@@ -27,9 +31,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="stand-out">
+      <section className={styles.standOut} id="stand-out">
         <div className={styles.grid}>
           <picture className={styles.picture}>
+            <source
+              media="(min-width: 768px)"
+              srcSet="/images/desktop/image-stand-out.jpg"
+            />
             <img src="/images/mobile/image-stand-out.jpg" alt="" />
           </picture>
 

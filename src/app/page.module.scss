@@ -1,6 +1,14 @@
+@import '@/utils/media-query';
+
 .content {
   padding: 4rem 1.5rem;
   text-align: center;
+
+  @include responsive(desktop) {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
   h2 {
     font-size: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
@@ -79,10 +87,19 @@
   p {
     font-size: 1rem;
     letter-spacing: -0.114px;
+
+    @include responsive(desktop) {
+      max-width: 350px;
+      margin: 0 auto;
+    }
   }
 
   &[data-type='design'] {
     background-image: url('/images/mobile/image-graphic-design.jpg');
+
+    @include responsive(tablet) {
+      background-image: url('/images/desktop/image-graphic-design.jpg');
+    }
 
     h3,
     p {
@@ -93,6 +110,10 @@
   &[data-type='photography'] {
     background-image: url('/images/mobile/image-photography.jpg');
 
+    @include responsive(tablet) {
+      background-image: url('/images/desktop/image-photography.jpg');
+    }
+
     h3 {
       color: #052c3b;
       opacity: 0.75;
@@ -100,6 +121,34 @@
 
     p {
       color: #19536c;
+    }
+  }
+}
+
+.grid {
+  @include responsive(tablet) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.picture {
+  @include responsive(tablet) {
+    height: 600px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.standOut {
+  @include responsive(tablet) {
+    .content {
+      order: -1;
     }
   }
 }

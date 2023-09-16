@@ -1,4 +1,16 @@
+@import '@/utils/media-query';
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @include responsive(tablet) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }

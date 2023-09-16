@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import { NavbarMobile } from './Mobile'
 import { NavbarDesktop } from './Desktop'
 
-export function Navbar() {
+export default function Navbar() {
   const isDesktop = useMediaQuery({ minWidth: 1024 })
 
   return isDesktop ? <NavbarDesktop /> : <NavbarMobile />
