@@ -1,8 +1,15 @@
 .header {
   position: relative;
-  min-height: 540px;
+  height: 540px;
   background-image: url('/images/mobile/image-header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom center;
+
   padding: 2rem 1.5rem;
+
+  @media only screen and (min-width: 768px) {
+    height: 800px;
+    background-image: url('/images/desktop/image-header.jpg');
+  }
 }

@@ -1,11 +1,11 @@
 import { Hero } from './Hero'
-import { NavbarMobile } from './NavbarMobile'
+import { Navbar } from './Navbar'
 import styles from './styles.module.scss'
 
 export function Header() {
   return (
     <header className={styles.header}>
-      <NavbarMobile />
+      <Navbar />
       <Hero />
     </header>
   )
