@@ -5,7 +5,7 @@ import styles from './page.module.scss'
 export default function Home() {
   return (
     <main>
-      <section id="transform-your-brand">
+      <section className={styles.transformYourBrand} id="transform-your-brand">
         <div className={styles.grid}>
           <picture className={styles.picture}>
             <source
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.standOut} id="stand-out">
+      <section id="stand-out">
         <div className={styles.grid}>
           <picture className={styles.picture}>
             <source
